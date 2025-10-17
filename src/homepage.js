@@ -2,7 +2,11 @@ import pizzaImg from './pics/pizza.jpg';
 
 export function displayHomepage() {
     const content = document.getElementById('content');
- 
+    
+    // set up homepage content div
+    const homepageContent = document.createElement('div');
+    homepageContent.id = 'homepageContent';
+
     // brand
     const brandDiv = document.createElement('div');
     brandDiv.id = 'brandDiv';
@@ -18,20 +22,20 @@ export function displayHomepage() {
     brandDiv.appendChild(brand);
     brandDiv.appendChild(since);
 
-    content.appendChild(brandDiv);
+    homepageContent.appendChild(brandDiv);
 
     // authentic
     const authentic = document.createElement('h2');
     authentic.id = 'authentic';
     authentic.textContent = 'Authentic brick oven pizza!';
-    content.appendChild(authentic);
+    homepageContent.appendChild(authentic);
 
     // img
     const pizza = document.createElement('img');
     pizza.src = pizzaImg;
     pizza.id = 'pizza'
     pizza.setAttribute('alt', 'Picture of pizza')
-    content.appendChild(pizza);
+    homepageContent.appendChild(pizza);
 
     // location div
     const locationDiv = document.createElement('div');
@@ -47,7 +51,7 @@ export function displayHomepage() {
     address.textContent = '101 Pizza Ln.'
     locationDiv.appendChild(address);
 
-    content.appendChild(locationDiv);
+    homepageContent.appendChild(locationDiv);
 
     // hours div
     const hours = document.createElement('div');
@@ -95,7 +99,7 @@ export function displayHomepage() {
         hours.appendChild(groupDiv);
     });
 
-    content.appendChild(hours);
+    homepageContent.appendChild(hours);
 
     // photo credit
     const credit = document.createElement('p');
@@ -105,5 +109,7 @@ export function displayHomepage() {
         ' on ' + 
         '<a href="https://unsplash.com/photos/pizza-with-berries-MQUqbmszGGM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
     
-    content.appendChild(credit);
+    homepageContent.appendChild(credit);
+
+    content.appendChild(homepageContent);
 }
