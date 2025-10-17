@@ -73,11 +73,8 @@ button {
 
 /* content */
 #content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
     width: 80%;
+    height: max-content;
     background-color: navajowhite;
     border-radius: 50px;
     padding: 10px;
@@ -100,55 +97,3 @@ button {
     font-size: 48px;
 }
 
-#authentic {
-    background-color: palegoldenrod;
-    border: 3px solid peru;
-    border-radius: 10px;
-    width: max-content;
-    padding: 0 10px 0 10px;
-    color: maroon;
-}
-
-img {
-    width: 500px;
-    border: 5px solid peru;
-    border-radius: 10px;
-}
-
-/* location */
-#location, #hours {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: palegoldenrod;
-    border: 5px solid peru;
-    padding: 5px;
-    border-radius: 5px;
-    color: maroon;
-    line-height: 1.5em;
-}
-
-#location > .title {
-    text-decoration: underline;
-}
-
-/* hours */
-#hours {
-    align-items: first baseline;
-}
-
-#hours > .title {
-    align-self: center;
-    text-decoration: underline;
-}
-
-.group {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
-
-/* credit */
-#credit, #credit > a {
-    color: maroon;
-}

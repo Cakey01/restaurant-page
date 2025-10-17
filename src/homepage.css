@@ -1,0 +1,66 @@
+/* homepage content */
+
+#homepageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* authentic & img */
+
+#authentic {
+    background-color: palegoldenrod;
+    border: 3px solid peru;
+    border-radius: 10px;
+    width: max-content;
+    padding: 0 10px 0 10px;
+    color: maroon;
+}
+
+#pizza {
+    width: 500px;
+    border: 5px solid peru;
+    border-radius: 10px;
+}
+
+/* location */
+
+#location, #hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: palegoldenrod;
+    border: 5px solid peru;
+    padding: 5px;
+    border-radius: 5px;
+    color: maroon;
+    line-height: 1.5em;
+}
+
+#location > .title {
+    text-decoration: underline;
+}
+
+/* hours */
+
+#hours {
+    align-items: first baseline;
+}
+
+#hours > .title {
+    align-self: center;
+    text-decoration: underline;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+/* credit */
+
+#credit, #credit > a {
+    color: maroon;
+}
