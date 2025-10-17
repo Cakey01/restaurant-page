@@ -62,11 +62,11 @@
     grid-column: 1 / span 2
 }
 
-.title.type {
+.title.Type {
     grid-row: 2 / 3;
 }
 
-.title.amount {
+.title.Amount {
     grid-row: 2 / 3;
 }
 
