@@ -10,6 +10,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    max-height: 100vh;
 }
 
 img {
@@ -23,6 +24,7 @@ button {
 
 p, h1, h2, h3, h4, h5 {
     overflow-wrap: break-word;
+    font-family: Lucida Handwriting, cursive;
 }
 
 p {
@@ -32,4 +34,62 @@ p {
 h1, h2, h3, h4, h5 {
     text-wrap: balance;
 }
+
+/* body */
+body {
+    background-color: firebrick;
+}
+
+/* header */
+header {
+    background-color: olivedrab;
+    border-radius: 50px;
+    border: 5px solid peru;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    border-color: olive;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: palegoldenrod;
+    font-family: Lucida Handwriting, cursive;
+    font-weight: 600;
+    color: maroon;
+}
+
+/* brand */
+
+#brandDiv {
+    text-align: center;
+    margin: auto;
+    width: max-content;
+    margin-top: 20px;
+    padding: 30px;
+    border: 10px solid peru;
+    border-radius: 50%;
+    background-color: olivedrab;
+}
+
+#brand {
+    font-size: 48px;
+}
+
+
+img {
+    width: 500px;
+    margin: auto;
+}
+
 
