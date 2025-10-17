@@ -30,6 +30,7 @@ export function displayHomepage() {
     const pizza = document.createElement('img');
     pizza.src = pizzaImg;
     pizza.id = 'pizza'
+    pizza.setAttribute('alt', 'Picture of pizza')
     content.appendChild(pizza);
 
     // location div
