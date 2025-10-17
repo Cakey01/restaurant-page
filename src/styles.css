@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5 {
 /* body */
 body {
     background-color: firebrick;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 /* header */
@@ -46,7 +50,6 @@ header {
     border-radius: 50px;
     border: 5px solid peru;
     width: 80%;
-    margin: auto;
     margin-top: 10px;
     text-align: center;
     padding: 10px;
@@ -69,13 +72,19 @@ button {
     color: maroon;
 }
 
-/* brand */
+/* content */
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* brand & description */
 
 #brandDiv {
     text-align: center;
-    margin: auto;
     width: max-content;
-    margin-top: 20px;
     padding: 30px;
     border: 10px solid peru;
     border-radius: 50%;
@@ -86,10 +95,17 @@ button {
     font-size: 48px;
 }
 
+#authentic {
+    background-color: peru;
+    border-radius: 10px;
+    width: max-content;
+    padding: 0 10px 0 10px;
+}
 
 img {
     width: 500px;
-    margin: auto;
+    border: 5px solid peru;
+    border-radius: 10px;
 }
 
 
