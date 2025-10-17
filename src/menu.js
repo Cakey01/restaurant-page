@@ -8,6 +8,7 @@ export function displayMenu() {
     // menu title
     const menu = document.createElement('h1');
     menu.classList.add('title');
+    menu.textContent = 'Menu'
     menuContent.appendChild(menu);
 
     // items

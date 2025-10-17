@@ -1,4 +1,7 @@
 import { displayHomepage } from './homepage.js';
-import "./styles.css"
+import { displayMenu } from './menu.js';
+import './styles.css';
+import './homepage.css';
+import './menu.css';
 
-displayHomepage();
+displayMenu();
