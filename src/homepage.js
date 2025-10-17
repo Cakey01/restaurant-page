@@ -92,8 +92,9 @@ export function displayHomepage() {
         groupDiv.appendChild(times);
 
         hours.appendChild(groupDiv);
-        content.appendChild(groupDiv);
     });
+
+    content.appendChild(hours);
 
     // photo credit
     const credit = document.createElement('p');
