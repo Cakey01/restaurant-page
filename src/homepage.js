@@ -4,16 +4,21 @@ export function displayHomepage() {
     const content = document.getElementById('content');
  
     // brand
+    const brandDiv = document.createElement('div');
+    brandDiv.id = 'brandDiv';
+
     const brand = document.createElement('h1');
     brand.id = 'brand';
     brand.textContent = `Nino's Pizzaria`;
-    content.appendChild(brand);
 
-    // since
     const since = document.createElement('h3');
     since.id = 'since';
     since.textContent = 'Since 1923';
-    content.appendChild(since);
+
+    brandDiv.appendChild(brand);
+    brandDiv.appendChild(since);
+
+    content.appendChild(brandDiv);
 
     // authentic
     const authentic = document.createElement('h2');
