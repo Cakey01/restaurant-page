@@ -140,3 +140,8 @@ img {
     justify-content: space-between;
     width: 300px;
 }
+
+/* credit */
+#credit, #credit > a {
+    color: palegoldenrod;
+}
