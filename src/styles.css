@@ -109,7 +109,7 @@ img {
 }
 
 /* location */
-#location {
+#location, #hours {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,4 +119,24 @@ img {
     border-radius: 5px;
     color: maroon;
     line-height: 1.5em;
+}
+
+#location > .title {
+    text-decoration: underline;
+}
+
+/* hours */
+#hours {
+    align-items: first baseline;
+}
+
+#hours > .title {
+    align-self: center;
+    text-decoration: underline;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
 }
